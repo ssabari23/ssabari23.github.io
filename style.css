@@ -47,7 +47,7 @@
 .navbar .menu li a:hover{
     color: rgb(255, 255, 255);
 }
-.navbar .logo {
+.navbar .logo a{
     font-size: 2.5vw;
     font-weight: 600;
     color: #fff;
