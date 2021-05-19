@@ -35,6 +35,9 @@
          </div>
      </nav>
      </div>
+     <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+     </div>   
      <!-- home section start -->
       <section class="home" id="home">
           <div class="max-width">
@@ -84,6 +87,18 @@
           
 
       </section>
+
+      <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
     </body>
     <footer class="end">
         <p>This webpage is not yet fully finished, regular updating will be there.</p>
